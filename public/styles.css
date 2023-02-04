@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+	font-family: 'Press Start 2P', cursive;
+}
+
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    border: 0;
+}
+
+#seleccionar-mascota {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/877/196/900/pixel-art-mountains-waterfall-trees-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulo {
+    color: rgb(245, 245, 126);
+    font-size: 4.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    color: rgb(245, 245, 126);
+    font-size: 1.7;
+    padding: 0.2rem;
+    font-weight: bolder;
+    margin-top: 7px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-de-mokepon {
+    width: 190px;
+    height: 220px;
+    color: rgb(245, 245, 126);
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+	backdrop-filter: blur(10px);
+    border: 2.5px solid whitesmoke;
+    cursor: pointer;
+}
+
+.tarjeta-de-mokepon img {
+    width: 130px;
+    height: 130px;
+}
+
+.tarjeta-de-mokepon:hover {
+    border: 3.5px solid rgb(253, 255, 120);
+    backdrop-filter: blur(50px);
+}
+
+
+.label {
+	font-size: 1.3rem;
+	color: #506378;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    width: 190px;
+    height: 220px;
+    color: rgb(245, 245, 126);
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+	backdrop-filter: blur(50px);
+    border: 3.5px solid rgb(253, 255, 120);
+    cursor: pointer;
+}
+#boton-mascota {
+    background-color: rgb(245, 245, 126);
+    border: 2px solid whitesmoke;
+    width: 310px;
+    height: 50px;
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    font-family: 'Press Start 2p';
+    border-radius: 15px;
+    margin-top: 30px;
+}
+#boton-mascota:hover {
+    border: 2.5px solid black;
+}
+
+#titulo-de-mapa {
+    font-size: 19px;
+    text-align: center;
+}
+#ver-mapa {
+    background-image: url(https://browsecat.art/sites/default/files/pokemon-forest-background-128737-1037849-13995.png);
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    background: transparent;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 126);
+    font-family: 'Press Start 2P';
+    margin: 7px 0;
+    text-align: center;
+}
+
+#mapa {
+    border: 5px solid black;
+}
+#seleccionar-ataque {
+    background-image: url(https://pbs.twimg.com/media/DVMT-6OXcAE2rZY.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: static;
+}
+
+.emoji {
+    font-size: 22px;
+}
+
+.emote-grande {
+    font-size: 12px;
+}
+    
+.boton-de-ataque {
+    background-color: var(--White);
+	backdrop-filter: blur(15px);
+    border: 2.5px solid whitesmoke;
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Press Start 2p';
+    border-radius: 15px;
+    margin-top: 30px;
+    
+}
+
+#contenedor-de-combate {
+    display: flex;
+    justify-content: center;
+    gap: 69px;
+    font-size: 8px;
+    
+}
+    
+.caja-mascota-jugador, .caja-mascota-enemigo {
+    width: 205px;
+    height: 222px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px;
+    display: flex;
+    
+    background-color: var(--White);
+	border-radius: 10px;
+    border: 3.5px solid rgb(0, 0, 0);
+    margin-top: 76px;
+    
+}
+
+.caja-mascota-jugador {
+    background-color: rgb(57, 90, 238, 0.6);
+    
+}
+.caja-mascota-enemigo {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+#imagen-mascota-jugador, #imagen-mascota-enemigo {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    margin-top: 14px;
+    
+}
+
+
+#mascota-jugador, #mascota-enemigo, #vidas-jugador, #vidas-enemigo {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+}
+
+#caja-mensajes {
+    
+    display: flex;
+    width: 715px;
+    height: 170px;
+    
+    text-align: left;
+    margin-top: 93px;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    font-size: 9.5px;
+    overflow: auto;
+    font-style: bold;
+    
+
+}
+
+
+.borde-caja-mensajes {
+    border: 3.5px solid rgb(49, 110, 160);
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+    
+}
+
+
+#mensajes-jugador, #mensajes-enemigo {
+    text-align: left;
+}
+#mensaje-final {
+    font-size: 30px;
+    margin-top: -540px;
+    color: whitesmoke;
+}
+
+#boton-reiniciar {
+    background-color: rgb(245, 245, 126);
+    border: 2px solid whitesmoke;
+    width: 320px;
+    height: 60px;
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    font-family: 'Press Start 2p';
+    border-radius: 15px;
+    margin-top: 80px;
+    font-size: 16px;
+}
+#boton-reiniciar:hover {
+    border: 2.5px solid black;
+}
+
+/*@media (max-width: 360px) {
+    .tarjetas, .contenedor-de-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 460px) {
+    .seleccionar-mascota, .contenedorTarjetas {
+      background-size: contain;
+    
+    }
+}*/
+
+@media (max-width: 420px) {
+    .tarjetas, #contenedor-de-ataques {
+        flex-direction: column;
+    }
+    .tarjeta-de-mokepon {
+        width: 100px;
+        height: 110px;
+        color: rgb(245, 245, 126);
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 15px;
+        display: flex;
+        backdrop-filter: blur(10px);
+        border: 2.5px solid whitesmoke;
+        cursor: pointer;
+    }
+
+    .tarjeta-de-mokepon img {
+        width: 60px;
+        height: 60px;
+    }
+    .titulo {
+        color: rgb(245, 245, 126);
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: rgb(245, 245, 126);
+        font-size: 1rem;
+        margin-top: 60px;
+        font-weight: bolder;
+        
+    }
+    p{
+        font-size: 10px;
+    }
+    #seleccionar-mascota {
+        background-image: url(https://w0.peakpx.com/wallpaper/758/656/HD-wallpaper-pokemon-venusaur-anime-trees-colorful.jpg);
+        overflow: auto;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    .tarjeta-de-mokepon:hover {
+        border: 3.5px solid rgb(253, 255, 120);
+        backdrop-filter: blur(50px);
+        width: 100px;
+        height: 110px;
+        color: rgb(245, 245, 126);
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 15px;
+        display: flex;
+        backdrop-filter: blur(10px);
+        border: 2.5px solid whitesmoke;
+        cursor: pointer;
+    }
+    input:checked+label {
+       
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(50px);
+        width: 100px;
+        height: 110px;
+        
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 15px;
+        display: flex;
+        border: 3px solid rgb(253, 255, 120);
+        cursor: pointer;
+    }
+    #ver-mapa {
+        background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210526/pngtree-rain-forest-image_721252.jpg);
+        overflow: auto;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        height: 100vh;
+        width: 100vw;
+        
+    } #seleccionar-ataque {
+        
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+   
+
+}
